@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container mt-5">
+		
+		<div class="row">
+
+		<div class="col-sm-6">
+		<h5>Calculate GST</h5>
+		<form>
+			<label class="form-label">Amount: </label> 
+			<input class="form-control form-control-sm" type="text" id="amount" value="100">
+			
+			<label class="form-label">GST Percent: </label> 
+			<input class="form-control form-control-sm" type="text" id="gstpercent" value="18" disabled>
+			
+			<label class="form-label">GST Amount: </label> 
+			<input class="form-control form-control-sm" type="text" id="gstamt" value="" disabled>
+			
+			<label class="form-label">Total Amount Rs. :</label> 
+			<input class="form-control form-control-sm" id="tamt" type="text" disabled>
+
+			<br>
+			<button id="gstbtn" type="button" class="btn btn-primary">Calculate</button>
+		</form>
+		<br>
+
+		</div>
+
+		
+
+		<div class="col-sm-6">
+		<h5>Calculate Fuel Cost</h5>
+		<form>
+			<label class="form-label">Distance Km: </label> 
+			<input class="form-control form-control-sm" type="text" id="fuel_distance" value="100">
+			
+			<label class="form-label">Average Km/Ltr: </label>
+			<input class="form-control form-control-sm" type="text" id="fuel_average" value="18">
+			
+			<label class="form-label">Fuel Cost Ltr/Rs: </label> 
+			<input class="form-control form-control-sm" type="text" id="fuel_cost" value="83.51">
+			
+			<label class="form-label">Total Fuel Ltrs: </label> 
+			<input class="form-control form-control-sm" type="text" id="fuel_total_litres" disabled>
+
+			<label class="form-label">Total Cost Rs. : </label> 
+			<input class="form-control form-control-sm" id="total_fuel" type="text" disabled>
+
+			<br>
+			<button id="fuelbtn" type="button" class="btn btn-primary">Calculate</button>
+		</form>
+		</div>
+
+		</div>
+
+
+
+
+		<div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
