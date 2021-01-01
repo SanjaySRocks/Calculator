@@ -1,1 +1,1 @@
-# Calculator
+A basic calculator to calculate fuel cost written is javascript.
